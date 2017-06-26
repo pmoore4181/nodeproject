@@ -3,7 +3,7 @@
   "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
   "main": "app.js",
   "authors": [
-    "Mostafa Eweda <mo.eweda@gmail.com>"
+    "Patrick Moore"
   ],
   "license": "ISC",
   "homepage": "",
