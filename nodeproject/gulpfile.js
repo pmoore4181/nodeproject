@@ -7,7 +7,7 @@ var jsFiles = ['*.js', 'src/**/*.js'];
 gulp.task('style', function(){
 	return gulp.src('jsFiles')
 		.pipe(jshint());
-});
+}); 
 
 gulp.task('inject', function(){
 	var wiredep = require('wiredep').stream;
@@ -33,8 +33,8 @@ gulp.task('serve', ['style', 'inject'], function(){
 	var options = {
 		script: 'app.js',
 		delayTime: 1,
-		watch: 'app.js'
-	};
+		watch: jsFiles
+	}
 
 	return nodemon(options)
 		.on('restart', function(ev){
